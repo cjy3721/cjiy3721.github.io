@@ -1,0 +1,434 @@
+body{
+    background-color: #f7f7f7;
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    line-height: 1.3; /* 行间距为字体大小的 2 倍 */
+    width: 100%;
+    margin: 0;
+}
+.center_box{
+    width: 1200px; /*设置元素的宽度为1200像素*/
+    margin: 0 auto; /*水平居中*/
+}
+
+:root {
+    --hui-color:rgb(22, 22, 22);
+    --red-color:rgb(166, 9, 9);
+    --zong-color:rgb(255, 178, 127);
+    --zongchek-color:rgb(223, 147, 71);
+}
+
+.top{
+    border-bottom: solid 2px black;
+}
+.top2{
+    border-bottom: solid 5px var(--red-color);
+}
+.biaoti{
+    padding: 100px 40% 50px 40% ;
+}
+
+
+/*导航栏*/
+.daohong1{
+    border: 1px solid var(--red-color);
+}
+
+.lan {
+    background-color: var(--hui-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.lan >img{
+    width: 270px;
+    height: 50px;
+    margin: auto 8px;
+}
+
+.xiang {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+}
+.xiang >span{
+    color: white;
+}
+.xiang > li {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.xiang> li> a{
+    color:#fff;
+    transition: all 0.1s ease-in-out;
+    
+}
+.xiang> li> a:hover{
+    color: var(--red-color);
+
+}
+.xiang> li> ol{
+    color:#fff;
+    list-style: none;
+    padding: 0;
+    background-color: var(--hui-color);
+    transform: scaleY(0);
+    transform-origin: top center;
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+.xiang> li> ol >li> a:hover{
+    color: var(--red-color);
+}
+
+.xiang > li:hover > ol {
+    transform: scaleY(1);
+    opacity: 1;
+    border-radius: 2px;
+}
+/*子菜单*/
+.xiang > li >  a {
+    color: #fff;
+}
+.xiang > li > ol > li {
+    transition: all 0.2s ease;
+   
+}
+.xiang > li > ol > li >a{
+    color: #fff;
+    
+}
+.xiang > li > ol > li:hover{
+   color: var(--red-color)
+}
+
+.xiang > li > ol > li:active{
+   color: var(--red-color)
+}
+
+
+/* 首页图 */
+.imgbackground{
+    background-color: var(--huichek-color);
+}
+/* 轮播样式 */
+.banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;  /* 水平居中 */
+}
+.banner >.banner_img{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.banner_img >a> img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.swarp_active{
+    visibility: visible !important;
+}
+.point{
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+.point > li{
+    width: 15px;
+    height: 15px;
+    background-color: #f7f7f7a3 ;
+    list-style: none;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.point > li.active{
+    background-color: white;
+
+}
+.point > li.last-child{
+    margin-right: 0;
+}
+.page{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: saturate(180%) blur(6px); 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+/*左右按键样式 */
+.page >.iconfont{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    align-self: center;
+    transition: all 0.2s ease-in;
+}
+.page:hover{
+    background-color: #fff;
+}
+.page:hover >.iconfont{
+    color: var(--red-color)
+}
+.right {
+    right: 30px;
+}
+.left{
+    left: 30px;
+}
+.left >.iconfont {
+    transform: rotate(180deg)
+}
+
+.donwload{
+    top: 640px;
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    backdrop-filter: saturate(100%) blur(2px);
+    background: rgba(9, 9, 9, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 智能家居 */
+
+.zhineng_img{
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    
+  }
+
+/* 联系我们 */
+.dianji{
+    color: var(--zongchek-color);
+    font-size: 18px;
+
+}
+.dianji:hover{
+    color: var(--red-color);
+}
+.dianji:active{
+    color: var(--red-color);
+}
+
+.dianji2{
+    color:white
+}
+.dianji2:hover{
+    color: var(--red-color);
+}
+.dianji2:active{
+    color: var(--red-color);
+}
+/* <!-- 为什么选择我们 --> */
+.card {
+    width: 160px;
+    height: 160px;
+    padding: 40px 15px ;
+    color: #fff;
+    background: linear-gradient(45deg,var(--zong-color),var(--red-color)) ;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px var(--hui-color,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+ul li.card:nth-child(1),
+ul li.card:nth-child(3) {
+  background:linear-gradient(45deg,var(--red-color),var(--zongchek-color));
+}
+
+ .card >.title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--red-color);
+    text-align: center;
+  }
+
+ .card>.paragraph {
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 18px;
+  
+  }
+
+/* 新闻咨询标题*/
+
+.biaoti >span {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px ;
+    /* 字体大小为*/
+    /* font-weight: bold; 加粗*/
+    color: black;
+}
+.biaoti >span:last-child{
+    font-size: 8px ;
+}
+/* 新闻板块 */
+
+/* 公司新闻标题 */
+.title{
+    margin-left: 10%;
+    width: 140px;
+    height: 40px;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+/* 新闻列表 */
+.news_list{
+    text-align: center;
+    line-height: normal;
+}
+.news_list >li{
+    list-style: none;
+}
+
+.news_list > li >a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news_list > li > a:hover p {
+    color: var(--red-color);
+    transition: all 0.3s ease-in;
+}
+.news_list img {
+    width: 680px;
+    height: 350px;
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.news_list  h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    font-weight: normal;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news_list p{
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: black;
+    font-size: 16px;
+    white-space: normal;
+    margin: 13px 0 13px 0;
+}
+.news_list p:last-child{
+    margin-right: 0px;
+    font-size: 13px;
+}
+/* 脚注 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--hui-color);
+    color: white;
+}
+.footer > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer > div > div >p {
+    margin: 8px 0;
+}
+
+
+.footer >div >div >.footlogo{
+    height: 50px;
+    width: 270px;
+    
+}
+.erweima_img{
+    margin-left: 5px;
+    margin-top: 8px;
+    height: 80px;
+    width: 80px;
+    
+}
+.footer > div  div:last-child >p>a{
+    color: white;
+    width: 120px;
+    text-align: right;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+footer > div > div:last-child >p> a:hover {
+    font-weight: bold;
+    color: var(--red-color);
+}
+
+
+    
+
+    

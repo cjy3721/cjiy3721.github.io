@@ -1,0 +1,253 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-04-06 14:19:06
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-06-26 16:49:26
+ * @FilePath: \chanp\Html\company.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居</title>
+    <link rel="shortcut icon" href="./image/logoh.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./Css/index.css">
+ 
+<style>
+     a{
+    text-decoration: none;
+ }
+ body{
+  background-color: white;
+}
+
+.company_list{
+    margin: 20px 15% 20px 15%;
+}
+
+.company_list>div{
+  padding: 15px 15px 20px 15px;
+  border:none;
+  margin-bottom: 100px;
+  width: 100%;
+  height: auto;
+}
+.jieshao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/*  公司介绍*/
+.company_list>div >h2 {
+  /* 标题的样式 */
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.jieshao > img{
+  /* 图片的样式 */
+  width: 245px;
+  height: 180px;
+  object-fit: cover;
+  float: left;
+}
+.jieshao>p{
+  font-size: 18px;
+  padding: 0 0 0 15px;
+}
+/* 个人介绍 */
+.grjs{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+.grjs >li{
+  border: solid 2px #e3e3e3;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 40px rgb(0, 0, 0, 25%);
+}
+.grjs >li >img{
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  float: left;
+}
+.data_name h4 {
+  text-align: center;
+}
+
+</style>
+<body>
+      
+    <!-- 导航栏 -->
+    <div class="lan">
+        <img src="./image/logobai.png" alt="">
+        <ol class="center_box xiang">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="news.html">新闻咨询</a>
+            </li>
+            <span>|</span>
+            <li><a href="company.html"style="color: var(--red-color);">关于公司</a>
+                <ol>
+                    <li><a href="company.html#company-intro">公司简介</a></li>
+                    <li><a href="company.html#development-history">发展历程</a></li>
+                    <li><a href="company.html#team-introduction">团队介绍</a></li>
+                </ol>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="products.html">产品中心</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="help.html">使用帮助</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="lianxi.html">联系我们</a>
+            </li>
+    
+        </ol>
+    </div>
+
+<!-- 首页大图 -->
+<div class="imgbackground">
+    <div class="banner">
+        <div class="banner_img">
+            <a href="company.html"><img src="./image/s/img2.jpg"class="swarp_active" alt=""></a>
+            <a href="products.html"><img src="./image/s/img3.jpg" alt=""></a>
+            <a href="help.html"><img src="./image/s/img4.png" alt=""></a>
+            <a href="lianxi.html"><img src="./image/s/img5.png" alt=""></a>
+            <a href="news.html"><img src="./image/s/img1.jpg"  alt=""></a>
+        </div>
+        <!--点切换-->
+        <ul class="point">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!--左右切换-->
+        <div class="page right">
+          <span class="iconfont " onclick="handlerRight()">></span>
+        </div>
+        <div class="page left">
+          <span class="iconfont " onclick="handlerLeft()">></span>
+        </div>
+    </div>
+</div>
+<div class="donwload">
+    <div style="color: white;font-size: 15px;">Internet Celebrity Technology Co., Ltd</div>
+    <div style="color: white;font-size: 15px;">关于公司</div>
+</div>
+
+    <!-- 新闻咨询 -->
+    <div class="biaoti">
+        <span>关于公司</span>
+        <span>About the company</span>
+        <div class="top"></div>
+    </div>
+
+    <div class="company_list">
+        <div id="company-intro" style="background-color: #ececec;">
+            <h2>公司简介</h2>
+            <div class="jieshao">
+                <img src="./image/gs1.jpg" alt="公司图片" >
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp网红科技有限公司是一家著名的智能家居研发公司，曾荣获多个科技奖项，包括但不限于：智能家居创新奖、最佳智能家居解决方案奖等。专业研发智能家居系统，致力于为用户提供更加便捷、舒适和智能化的生活体验。</p>
+            </div>
+        </div>
+        
+        <div id="development-history" style="background-color: #ececec;">
+            <h2>发展历程</h2>
+            <div class="jieshao">
+                <img src="./image/gs2.jpg" alt="公司图片">
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp2024年3月7日，网红科技有限公司成立，由一群充满激情和创新精神的创业者组成。2024年6月1日，公司研发出一款革命性的智能家居产品，引起了市场的广泛关注。目前，公司凭借出色的产品和服务，迅速扩大市场份额，成为行业内的佼佼者。</p>
+            </div>
+        </div>
+ 
+    </div>
+    <div class="company_list">
+        <div id="team-introduction" style="background-color: #ececec;margin-right:0 ;">
+            <h2>团队介绍</h2>
+            <ul class="grjs" style="margin: 30px 50px 30px 0;justify-content: space-around;">
+                <li style="width: 20%;">
+                    <img src="./image/ren/yu.jpg" alt=" ">
+                        <div class="data_name"><h4>喻华阳(CEO)</h4>
+                            <p>拥有丰富的行业经验和卓越的领导才能。</p>
+                        </div>
+                </li>
+                <li style="width: 20%;">
+                    <img src="./image/ren/chen.jpg" alt="照片">
+                        <div class="data_name"><h4>陈家云(前端专家)</h4>
+                            <p>擅长打造用户友好的界面。</p>
+                        </div>
+                </li>
+            </ul>
+                
+            <ul class="grjs" style="margin-right: 50px;">
+                <li style="width: 20%;">
+                    <img src="./image/ren/huang.jpg" alt="照片">
+                        <div class="data_name"><h4>黄小龙(软硬件工程师)</h4>
+                            <p>确保系统中软件与硬件的协同运作以及整体的稳定性和安全性。</p>
+                        </div>
+                </li>
+                <li style="width: 20%;">
+                    <img src="./image/ren/yang.jpg" alt="照片">
+                        <div class="data_name" ><h4>杨磊(资深美工)</h4>
+                            <p>为产品设计美观的视觉效果。</p>
+                        </div>
+                </li>
+                <li style="width: 20%;"> 
+                    <img src="./image/ren/hu.jpg" alt="照片">
+                        <div class="data_name"><h4>胡剑锋(销售精英)</h4>
+                            <p>擅长与客户建立良好的合作关系。</p>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+      
+     <!-- 脚注 -->
+     <footer class="overall_width footer">
+        <div class="center_box">
+            <div>
+                <img src="./image/logobai.png" alt="" class="footlogo">
+                <p>版权归@网红科技有限公司所有 | 4408-888-8888 | 邮编:610000</p>
+                <p>京ICP设备:17000854 号-1|京工网安备 454559874号</p>
+            </div>
+            <div>
+                <div style="display: flex;align-items: center;">
+                    <p>微信公众号:</p>
+                    <img src="./image/erweima_img.png" alt="" class="erweima_img">
+                </div>
+                <p>全国服务热线:400-643-2548</p>
+                
+            </div>
+            <div>
+                <p><a href="company.html#company-intro">公司简介</a><a href="/products.html">产品中心</a></p>
+                <p><a href="company.html#development-history">发展历程</a><a href="/help.html">使用帮助</a></p>
+                <p><a href="company.html#team-introduction">团队介绍</a><a href="/lianxi.html">联系我们</a></p>
+                <p><a href="news.html">新闻资讯</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/lunbo.js"></script>
+</body>
+</html>

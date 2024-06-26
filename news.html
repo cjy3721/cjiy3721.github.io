@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="shortcut icon" href="./image/logoh.png" type="image/x-icon"/>
+<style>
+     a{
+    text-decoration: none;
+ }
+</style>
+<body>
+     
+    <!-- 导航栏 -->
+    <div class="lan">
+        <img src="./image/logobai.png" alt="">
+        <ol class="center_box xiang">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="news.html" style="color: var(--red-color);">新闻咨询</a>
+            </li>
+            <span>|</span>
+            <li><a href="company.html">关于公司</a>
+                <ol>
+                    <li><a href="company.html#company-intro">公司简介</a></li>
+                    <li><a href="company.html#development-history">发展历程</a></li>
+                    <li><a href="company.html#team-introduction">团队介绍</a></li>
+                </ol>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="products.html">产品中心</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="help.html">使用帮助</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="lianxi.html">联系我们</a>
+            </li>
+    
+        </ol>
+    </div>
+
+<!-- 首页大图 -->
+<div class="imgbackground">
+    <div class="banner">
+        <div class="banner_img">
+            <a href="news.html"><img src="./image/s/img1.jpg" class="swarp_active" alt=""></a>
+            <a href="company.html"><img src="./image/s/img2.jpg" alt=""></a>
+            <a href="products.html"><img src="./image/s/img3.jpg" alt=""></a>
+            <a href="help.html"><img src="./image/s/img4.png" alt=""></a>
+            <a href="lianxi.html"><img src="./image/s/img5.png" alt=""></a>
+        </div>
+        <!--点切换-->
+        <ul class="point">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!--左右切换-->
+        <div class="page right">
+          <span class="iconfont " onclick="handlerRight()">></span>
+        </div>
+        <div class="page left">
+          <span class="iconfont " onclick="handlerLeft()">></span>
+        </div>
+    </div>
+</div>
+<div class="donwload">
+    <div style="color: white;font-size: 15px;">Internet Celebrity Technology Co., Ltd</div>
+    <div style="color: white;font-size: 15px;">新闻咨询</div>
+</div>
+
+
+<!-- 新闻咨询 -->
+    <div class="biaoti">
+        <span>新闻咨询</span>
+        <span>News consultation</span>
+        <div class="top"></div>
+    </div>
+ 
+
+    <style>
+        .list_name{
+            border-bottom: solid 2px #e3e3e3; /* 底部边框为直线，颜色为 #e3e3e3 */
+            padding: 0 0 5px 0;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;    /* 字体加粗 */
+            padding-top: 10px;  
+            text-align: center;
+
+        }
+        .btn {
+            border: none;
+            border-bottom: dashed 2px #e3e3e3; /* 底部边框为虚线，颜色为 #e3e3e3 */
+            padding: 5px 0;
+            width: 100%;
+            height: auto;
+            background:white;
+            color:black;
+            font-size: 15px;
+            margin-top: 0;  
+            transition: all 0.3s ease-in;   
+            word-break: break-all;
+            overflow: hidden; /* 溢出隐藏 */
+            text-overflow: ellipsis; /* 文字溢出时以省略号显示 */    
+           }
+  
+        .content{
+                    display: none;
+                }
+        .news_title{
+            color:black;
+            font-size: 20px;
+            font-weight: bold;    /* 字体加粗 */
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        
+
+        }
+
+        .news_img{
+                    width: 80%;
+                    height: auto;
+                    background-color: white;
+                    padding: 0 10%;
+                  
+                
+        }
+        .content >p{
+                    padding: 10px;
+                    text-align: left;
+                    word-wrap: break-word;
+                    font-size: 17px;
+                    color: black;
+                   
+                }
+        .btn.active{
+                    background-color:#e3e3e3;
+                }
+        .content.show{
+                    display:block;
+                    
+                }
+        </style>
+
+        <div style="display: flex;">
+            
+                <div  style="flex:0 0 18%;background-color: white; border: solid 1px #e3e3e3;border-radius: 3px;">
+                    <div style="display: flex;flex-direction: column;">
+                       
+                        <h class="list_name">近期新闻</h>
+                        <button class="btn active ">
+                            2024年3月7日,网红科技有限公司......
+                        </button>
+                    
+                        <button class="btn" >
+                            2024年5月6日,与智慧家居联盟达......
+                        </button>
+                        <button class="btn" >
+                            2024年6月1日,智能家居新品震撼......
+                        </button>
+              
+                    </div>
+                </div>
+                <div style="flex:0 0 4%;"></div>
+         
+           
+
+                <div style="flex:0 0 60%;background-color: white;border:  solid 1px #e3e3e3;border-radius: 3px;padding: 30px 15px 15px 20px ;">
+                    <div class="content show">
+
+                        <div class="news_title"><h>《网红科技有限公司于 2024 年 3 月 7 日正式成立！》</h></div>
+                        <img class="news_img" src="./image/new1.JPG" alt="">
+                        <p>&nbsp&nbsp&nbsp&nbsp2024 年 3 月 7 日，备受瞩目的网红科技有限公司宣告成立！据悉，该公司致力于智能家居的研发，是一家专注于此领域的企业公司。其成立将为智能家居行业注入新的活力与创新力量。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp在科技日新月异的当下，智能家居领域展现出巨大的发展潜力。网红科技有限公司的应运而生，彰显了其对市场趋势的精准把握和对科技创新的追求。公司将凭借其专业的研发团队和先进的技术理念，致力于打造更智能、更便捷、更舒适的家居生活体验。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp未来，我们期待网红科技有限公司在智能家居领域取得更多突破和成就，为人们的生活带来更多的便利和舒适。</p>
+                    </div>
+                
+                    <div class="content">
+                        <div class="news_title"><h>《网红科技有限公司于 2024 年 5 月 6 日与智慧家居联盟达成重要合作！》</h></div>
+                        <img class="news_img" src="./image/new2.jpg" alt="">
+                        <p>&nbsp&nbsp&nbsp&nbsp 2024 年 5 月 6 日，网红科技有限公司与智慧家居联盟正式达成战略合作！此次合作将整合双方的优势资源，共同探索智能家居领域的新发展。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp 智慧家居联盟在智能家居的市场渠道和用户资源方面拥有深厚的积累和强大的优势，与网红科技有限公司的前沿创新理念和专业研发能力相辅相成。双方将携手在产品联合研发、市场联合推广、客户服务优化等方面展开深度合作，致力于为消费者提供更具个性化和智能化的智能家居解决方案。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp 此次合作标志着网红科技有限公司在拓展业务版图、提升综合实力的道路上迈出了关键的一步。相信在双方的齐心协力下，必将为智能家居行业带来更多令人瞩目的创新成果和突破。</p>
+                    </div>
+                    
+                    <div class="content">
+                        <div class="news_title"><h>《2024年6月1日，网红科技有限公司的智能家居新品震撼登场！》</h></div>
+                        <img class="news_img" src="./image/new3.jpg" alt="">
+                        <p>&nbsp&nbsp&nbsp&nbsp 2024 年 6 月 1 日，网红科技有限公司的智能家居新品震撼登场，强势上市！自上市以来，该产品持续热销，市场反响极为热烈，热度不减。截至 6 月底，其销量更是节节攀升，创下了令人瞩目的佳绩。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp 这款智能家居新品融合了先进的技术和创新的设计，为用户带来了前所未有的便捷与舒适体验。它不仅具有智能化的控制系统，还能够实现远程操控和自动化管理，让用户的家居生活更加轻松自如。这款智能家居凭借其卓越的性能、创新的设计以及智能化的功能，成功赢得了消费者的青睐。它不仅为用户带来了前所未有的便捷与舒适体验，还满足了人们对于高品质生活的追求。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp 网红科技有限公司在研发过程中投入了大量的资源和精力，致力于打造一款引领潮流的智能家居产品。其团队充分考虑了用户的需求和痛点，通过不断的优化和改进，使该新品在市场上脱颖而出。在 5 月底，该智能家居新品的销量依然保持高位，这充分证明了其卓越的品质和市场竞争力。网红科技有限公司将继续秉持创新理念，不断提升产品质量和服务水平，为消费者带来更多优质的智能家居产品。</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp 此次新品的成功上市和热销，为网红科技有限公司奠定了坚实的市场基础，也为智能家居行业的发展注入了新的活力。相信在未来，该公司将在智能家居领域继续创造辉煌。</p>
+                    </div>
+           
+                </div>
+                <div style="flex:0 0 18%;"></div>
+
+            </div>
+        </div>
+    </div>
+     <!-- 脚注 -->
+     <footer class="overall_width footer">
+        <div class="center_box">
+            <div>
+                <img src="./image/logobai.png" alt="" class="footlogo">
+                <p>版权归@网红科技有限公司所有 | 4408-888-8888 | 邮编:610000</p>
+                <p>京ICP设备:17000854 号-1|京工网安备 454559874号</p>
+            </div>
+            <div>
+                <div style="display: flex;align-items: center;">
+                    <p>微信公众号:</p>
+                    <img src="./image/erweima_img.png" alt="" class="erweima_img">
+                </div>
+                <p>全国服务热线:400-643-2548</p>
+                
+            </div>
+            <div>
+                <p><a href="company.html#company-intro">公司简介</a><a href="/products.html">产品中心</a></p>
+                <p><a href="company.html#development-history">发展历程</a><a href="/help.html">使用帮助</a></p>
+                <p><a href="company.html#team-introduction">团队介绍</a><a href="/lianxi.html">联系我们</a></p>
+                <p><a href="news.html">新闻资讯</a></p>
+            </div>
+        </div>
+    </footer>
+<script src="./js/lunbo.js"></script>
+
+<script>
+    //获取页面的每个按钮
+    var btns = document.getElementsByClassName("btn")
+    //获取内容盒子
+    var contents = document.getElementsByClassName("content")
+
+    //遍历每个按钮为其添加点击事件
+    for(var i=0;i<btns.length;i++){
+        btns[i].index = i;
+        btns[i].onclick = function(){
+        //对当前点击的按钮赋予active类名及显示当前按钮对应的内容
+            for(var j=0;j<btns.length;j++){
+                btns[j].className = btns[j].className.replace(' active', '').trim();
+                contents[j].className = contents[j].className.replace(' show', '').trim();
+            }
+            this.className = this.className + ' active';
+            contents[this.index].className = contents[this.index].className + ' show';
+        };
+
+    }
+</script>
+
+</body>
+</html>

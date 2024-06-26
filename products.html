@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="shortcut icon" href="./image/logoh.png" type="image/x-icon"/>
+<style>
+     a{
+    text-decoration: none;
+ }
+    
+.products_img{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: white;
+  
+}
+
+.title{
+    width: 140px;
+    height: 40px;
+    background:black;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+</style>
+<body>
+      
+    <!-- 导航栏 -->
+    <div class="lan">
+        <img src="./image/logobai.png" alt="">
+        <ol class="center_box xiang">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="news.html">新闻咨询</a>
+            </li>
+            <span>|</span>
+            <li><a href="company.html">关于公司</a>
+                <ol>
+                    <li><a href="company.html#company-intro">公司简介</a></li>
+                    <li><a href="company.html#development-history">发展历程</a></li>
+                    <li><a href="company.html#team-introduction">团队介绍</a></li>
+                </ol>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="products.html"style="color: var(--red-color);">产品中心</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="help.html">使用帮助</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="lianxi.html">联系我们</a>
+            </li>
+    
+        </ol>
+    </div>
+
+<!-- 首页大图 -->
+<div class="imgbackground">
+    <div class="banner">
+        <div class="banner_img">
+              <a href="products.html"><img src="./image/s/img3.jpg" class="swarp_active"alt=""></a>
+              <a href="help.html"><img src="./image/s/img4.png" alt=""></a>
+              <a href="lianxi.html"><img src="./image/s/img5.png" alt=""></a>
+              <a href="news.html"><img src="./image/s/img1.jpg"  alt=""></a>
+              <a href="company.html"><img src="./image/s/img2.jpg" alt=""></a>
+        </div>
+        <!--点切换-->
+        <ul class="point">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!--左右切换-->
+        <div class="page right">
+          <span class="iconfont " onclick="handlerRight()">></span>
+        </div>
+        <div class="page left">
+          <span class="iconfont " onclick="handlerLeft()">></span>
+        </div>
+    </div>
+</div>
+<div class="donwload">
+    <div style="color: white;font-size: 15px;">Internet Celebrity Technology Co., Ltd</div>
+    <div style="color: white;font-size: 15px;">产品中心</div>
+</div>
+
+<!-- 产品中心 -->
+<div style="background-color: #ececec;">
+    <div class="biaoti">
+        <span>产品中心</span>
+        <span>products center</span>
+        <div class="top"></div>
+    </div>
+
+
+        <div style="margin: 0 15% 0 15%;">
+            <div style="display: flex">
+                <div style="width: 48%;margin: 10px 0;align-self: center;">
+                    <h1 style="text-align: center;font-size: 18px;">产品描述<br/>Product description</h1>
+                    <p style="font-size: 15px;width: 100%;word-wrap: break-word;">&nbsp&nbsp&nbsp&nbsp 本产品为智能家居系统，它可以为人们的生活带来更多的便利和舒适。<br/><br/>&nbsp&nbsp&nbsp&nbsp由于智能家居系统为多种智能组成且客户需求不同,所以还请您联系我们，我们将为您定制专属智能家居。</p>
+                </div>
+                <div style="width: 4%"></div>
+                <div style="text-align:right;;width: 48%;margin: 10px 0;"><img src="./image/cpjs1.jpg" alt="" class="products_img"></div>
+            </div>
+            <div style="display: flex">
+                <div style="width: 48%;margin: 10px 0;"><img src="./image/cpjs2.jpg" alt="" class="products_img"></div>
+                <div style="width: 4%"></div>
+                <div style="width: 48%;margin: 10px 0;align-self: center;">
+                    <h1 style="text-align: center;font-size: 18px;">产品功能<br/>Product function</h1>
+                    <p style="font-size: 15px;width: 100%;word-wrap: break-word;">&nbsp&nbsp&nbsp&nbsp 产品功能包括温湿度的检查、光照度智能亮灯、远程操控等<br/><br/>&nbsp&nbsp&nbsp&nbsp想了解更多功能？请联系我们：全国服务热线:400-643-2548</p>
+                </div>
+            </div>
+            <div style="height: 80px ;"></div>
+        </div>
+        
+        <div style="text-align: center;font-weight: bold;font-size: 18px;">
+            <span style="display: inline-block;vertical-align: middle;">视频讲解</span>
+            <br/><span>video explanation </span><br/>
+            <video width="900" height="550" controls>
+                <source src="./image/sp.mp4" volume="" type="video/mp4">
+                <!-- 可以添加其他视频格式的源，如 webm 等 -->
+            </video>
+        </div>
+    </div>
+
+        
+    <div class="biaoti">
+        <span>产品效果</span>
+        <span>Product effect</span>
+        <div class="top"></div>
+    </div>
+    <div style="margin: 0 15% 100px 15%;">
+        <div style="display: flex;margin-bottom: 5%;">
+            <div style="width: 30%;justify-content: left;"><img src="./image/img01.jpg" alt="" style="width: 100%;height: 100%;overflow: hidden;"></div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;justify-content: center;"><img src="./image/img02.jpg" alt=""style="width: 100%;height: 100%;overflow: hidden;"></div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;justify-content: right;"><img src="./image/img03.jpg" alt=""style="width: 100%;height: 100%;overflow: hidden;"></div>
+        </div>
+        <div style="display: flex;">
+            <div style="width: 30%;justify-content: left;"><img src="./image/img04.jpg" alt="" style="width: 100%;height: 100%;overflow: hidden;"></div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;justify-content: center;"><img src="./image/img05.jpg" alt=""style="width: 100%;height: 100%;overflow: hidden;"></div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;justify-content: right;"><img src="./image/img06.jpg" alt=""style="width: 100%;height: 100%;overflow: hidden;"></div>
+        </div>
+    </div>
+
+
+     <!-- 脚注 -->
+     <footer class="overall_width footer">
+        <div class="center_box">
+            <div>
+                <img src="./image/logobai.png" alt="" class="footlogo">
+                <p>版权归@网红科技有限公司所有 | 4408-888-8888 | 邮编:610000</p>
+                <p>京ICP设备:17000854 号-1|京工网安备 454559874号</p>
+            </div>
+            <div>
+                <div style="display: flex;align-items: center;">
+                    <p>微信公众号:</p>
+                    <img src="./image/erweima_img.png" alt="" class="erweima_img">
+                </div>
+                <p>全国服务热线:400-643-2548</p>
+                
+            </div>
+            <div>
+                <p><a href="company.html#company-intro">公司简介</a><a href="/products.html">产品中心</a></p>
+                <p><a href="company.html#development-history">发展历程</a><a href="/help.html">使用帮助</a></p>
+                <p><a href="company.html#team-introduction">团队介绍</a><a href="/lianxi.html">联系我们</a></p>
+                <p><a href="news.html">新闻资讯</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/lunbo.js"></script>
+</body>
+</html>

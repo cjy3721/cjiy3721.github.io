@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="shortcut icon" href="./image/logoh.png" type="image/x-icon"/>
+<style>
+     a{
+    text-decoration: none;
+ }
+    /* 电话 */
+.icon-lianxiwomen:before {
+    content: "\e62c";
+}
+
+
+.icon-qq:before {
+    content: "\e629";
+}
+/* 手机 */
+.icon-chuanzhen:before {
+    content: "\e62a";
+}
+
+/* 定位 */
+.icon-dizhi:before {
+    content: "\e62b";
+}
+
+/* 地区 */
+.diqu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+.diqu>span:first-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lxfs{
+    width: 46%;
+    height: auto;
+    background-color: #ececec;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.lxfs>span:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.lxfs>span:last-child{
+    font-size: 18px;
+    color: var(--red-color);
+    font-weight: bold;
+    white-space: nowrap;
+}
+</style>
+</head>
+<body>
+       
+    <!-- 导航栏 -->
+    <div class="lan">
+        <img src="./image/logobai.png" alt="">
+        <ol class="center_box xiang">
+            <li >
+                <a href="index.html">首页</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="news.html">新闻咨询</a>
+            </li>
+            <span>|</span>
+            <li><a href="company.html">关于公司</a>
+                <ol>
+                    <li><a href="company.html#company-intro">公司简介</a></li>
+                    <li><a href="company.html#development-history">发展历程</a></li>
+                    <li><a href="company.html#team-introduction">团队介绍</a></li>
+                </ol>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="products.html">产品中心</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="help.html">使用帮助</a>
+            </li>
+            <span>|</span>
+            <li>
+                <a href="lianxi.html" style="color: var(--red-color);">联系我们</a>
+            </li>
+    
+        </ol>
+    </div>
+
+<!-- 首页大图 -->
+<div class="imgbackground">
+    <div class="banner">
+        <div class="banner_img">
+            <a href="lianxi.html"><img src="./image/s/img5.png" class="swarp_active"alt=""></a>
+            <a href="news.html"><img src="./image/s/img1.jpg" alt=""></a>
+            <a href="company.html"><img src="./image/s/img2.jpg" alt=""></a>
+            <a href="products.html"><img src="./image/s/img3.jpg" alt=""></a>
+            <a href="help.html"><img src="./image/s/img4.png" alt=""></a>
+        </div>
+        <!--点切换-->
+        <ul class="point">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <!--左右切换-->
+        <div class="page right">
+          <span class="iconfont " onclick="handlerRight()">></span>
+        </div>
+        <div class="page left">
+          <span class="iconfont " onclick="handlerLeft()">></span>
+        </div>
+    </div>
+</div>
+    <!-- 中间 -->
+    <div class="donwload">
+        <div style="color: white;font-size: 15px;">Internet Celebrity Technology Co., Ltd</div>
+        <div style="color: white;font-size: 15px;">联系我们</div>
+    </div>
+    <div style="margin: 5% 15%;">
+        <div style="display: flex;justify-content: space-between;">
+            <img src="./image/lianxi2.jpg" alt="" style="width: 48%;">
+            <div style="width: 48%;">
+                <h2>网红科技有限公司</h2>
+                <p>网红科技有限公司已形成内部完善的组织结构和管理体制。在国内7大区域地区设有销售服务网点。</p>
+                <div class="diqu"><span>华南地区：</span><span>总部运营中心</span></div>
+                <div class="diqu"><span>华中地区：</span><span>江西生产基地、南昌办事处</span></div>
+                <div class="diqu"><span>华东地区：</span><span>江苏分公司、南京办事处</span></div>
+                <div class="diqu"><span>华北地区：</span><span>北京分公司、北京办事处</span></div>
+                <div class="diqu"><span>西南地区：</span><span>云南分公司 、四川分公司 、成都办事处</span></div>
+                <div class="diqu"><span>东北地区：</span><span>吉林分公司 、长春办事处</span></div>
+                <div class="diqu"><span>西北地区：</span><span>西安办事处</span></div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: space-between;margin: 50px 0 10px 0;">
+            <div class="lxfs"><span>🐧QQ: </span><span>3491025882</span></div>
+            <div class="lxfs"><span>📮邮箱: </span><span>3491025882@qq.com</span></div>
+        </div>
+        <div style="display: flex;justify-content: space-between;margin: 0 0 5% 0;">
+            <div class="lxfs"><span>📞全国服务热线：</span><span>400-643-2548</span></div>
+            <div class="lxfs"><span>📍总部地址：</span><span>广州市黄埔区开泰大道36号3楼310室</span></div>
+        </div>
+    </div>
+     <!-- 脚注 -->
+     <footer class="overall_width footer">
+        <div class="center_box">
+            <div>
+                <img src="./image/logobai.png" alt="" class="footlogo">
+                <p>版权归@网红科技有限公司所有 | 4408-888-8888 | 邮编:610000</p>
+                <p>京ICP设备:17000854 号-1|京工网安备 454559874号</p>
+            </div>
+            <div>
+                <div style="display: flex;align-items: center;">
+                    <p>微信公众号:</p>
+                    <img src="./image/erweima_img.png" alt="" class="erweima_img">
+                </div>
+                <p>全国服务热线:400-643-2548</p>
+                
+            </div>
+            <div>
+                <p><a href="company.html#company-intro">公司简介</a><a href="/products.html">产品中心</a></p>
+                <p><a href="company.html#development-history">发展历程</a><a href="/help.html">使用帮助</a></p>
+                <p><a href="company.html#team-introduction">团队介绍</a><a href="/lianxi.html">联系我们</a></p>
+                <p><a href="news.html">新闻资讯</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/lunbo.js"></script>
+</body>
+</html>
